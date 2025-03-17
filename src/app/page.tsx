@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HomePage from "@/components/pages/homepage/hero";
 
 export default function Home() {
