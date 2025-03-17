@@ -2,14 +2,17 @@
 
 import { usePathname } from "next/navigation";
 
-type Path = [
-	{
-		title: string;
-		url: string;
-	}
-];
+type Path = {
+	title: string;
+	url: string;
+};
 
-export default function DisplayPaths({ paths }: { paths: Path }) {
+interface DisplayPathsProps {
+	paths: Path[];
+}
+
+// export default function DisplayPaths({ paths }: { paths: Path }) {
+const DisplayPaths: React.FC<DisplayPathsProps> = ({ paths }) => {
 	const currentRoute = usePathname();
 	console.log(currentRoute);
 	return (
@@ -26,4 +29,6 @@ export default function DisplayPaths({ paths }: { paths: Path }) {
 			))}
 		</ul>
 	);
-}
+};
+
+export default DisplayPaths;
