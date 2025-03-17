@@ -1,9 +1,14 @@
 import DashboardLayout from "@/layout/dashLayout";
 
 export default function page() {
+	const currentDate = new Date();
+	const today = currentDate.toDateString();
 	return (
 		<DashboardLayout>
-			<div className="bg-white rounded-lg h-[95vh] mx-5">hello lorem</div>
+			<div>
+				<h1 className="font-bold text-3xl">Dashboard</h1>
+				<div>{today}</div>
+			</div>
 		</DashboardLayout>
 	);
 }

@@ -7,37 +7,32 @@ import {
 } from "@/components/ui/sidebar";
 
 import DisplayUser from "@/features/user/DisplayUser";
+import DisplayPaths from "../ui/DisplayPaths";
 
 const sidebarContent = [
 	{
 		title: "Dashboard",
-		url: "#",
-		icon: "",
+		url: "/dashboard",
 	},
 	{
 		title: "Expenses",
-		url: "#",
-		icon: "",
+		url: "/dashboard/expenses",
 	},
 	{
 		title: "Wallets",
 		url: "#",
-		icon: "",
 	},
 	{
 		title: "Summary",
 		url: "#",
-		icon: "",
 	},
 	{
 		title: "Accounts",
 		url: "#",
-		icon: "",
 	},
 	{
 		title: "Settings",
 		url: "#",
-		icon: "",
 	},
 ];
 
@@ -49,13 +44,7 @@ export default function AppSidebar() {
 				<DisplayUser />
 				<SidebarGroup />
 				<div className="mt-20">
-					<ul className="gap-5 flex flex-col">
-						{sidebarContent.map((item, index) => (
-							<li key={index} className="font-semibold text-3xl text-gray-400">
-								<a href={item.url}>{item.title}</a>
-							</li>
-						))}
-					</ul>
+					<DisplayPaths paths={sidebarContent} />
 				</div>
 
 				<SidebarGroup />

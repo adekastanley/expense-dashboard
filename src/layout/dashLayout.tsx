@@ -9,9 +9,11 @@ export default function DashboardLayout({
 	return (
 		<SidebarProvider className="bg-black">
 			<AppSidebar />
-			<main className="w-full ">
+			<main className="w-full  ">
 				<SidebarTrigger />
-				{children}
+				<section className="bg-white rounded-lg h-[95vh] mx-5 overflow-scroll p-5">
+					{children}
+				</section>
 			</main>
 		</SidebarProvider>
 	);
