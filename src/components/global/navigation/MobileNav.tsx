@@ -16,9 +16,7 @@ export default function MobileNav() {
 		<header className="relative z-50">
 			<Sheet>
 				<SheetTrigger className="right-5 top-10 fixed " asChild>
-					<Button className=" " variant="outline">
-						Open
-					</Button>
+					<Button variant="outline">Open</Button>
 				</SheetTrigger>
 
 				<SheetContent>
