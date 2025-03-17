@@ -38,12 +38,12 @@ const sidebarContent = [
 
 export default function AppSidebar() {
 	return (
-		<Sidebar className="border-0 outline-none">
+		<Sidebar className="border-0 outline-none ">
 			<SidebarHeader />
-			<SidebarContent className=" mt-10 px-10 ">
+			<SidebarContent className=" mt-10 px-10  ">
 				<DisplayUser />
 				<SidebarGroup />
-				<div className="mt-20">
+				<div className="mt-0">
 					<DisplayPaths paths={sidebarContent} />
 				</div>
 

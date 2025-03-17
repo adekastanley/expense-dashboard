@@ -9,7 +9,7 @@ export default function HomePage() {
 					Track what matters <br />
 					<span className="text-primary"> in less time</span>
 				</h1>
-				<p>
+				<p className="text-center">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
 					quia.
 				</p>
@@ -17,7 +17,13 @@ export default function HomePage() {
 					<Button className="" size={"lg"}>
 						Buy now
 					</Button>
-					<Button size={"lg"}>Try it out</Button>
+					<Button
+						variant={"outline"}
+						className="outline-primary outline-1 outline-solid hover:bg-primary hover:text-white"
+						size={"lg"}
+					>
+						Try it out
+					</Button>
 				</div>
 			</div>
 		</section>
