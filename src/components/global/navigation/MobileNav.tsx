@@ -4,7 +4,7 @@ import {
 	Sheet,
 	// SheetClose,
 	SheetContent,
-	// SheetDescription,
+	SheetDescription,
 	SheetFooter,
 	SheetHeader,
 	SheetTitle,
@@ -19,19 +19,18 @@ export default function MobileNav() {
 					<Button variant="outline">Open</Button>
 				</SheetTrigger>
 
-				<SheetContent>
+				<SheetContent side="bottom">
 					<SheetHeader>
-						<SheetTitle>Navigation</SheetTitle>
+						<SheetTitle>Login or Sign up</SheetTitle>
 					</SheetHeader>
-					<div className="grid gap-4 py-4 pl-4">
-						<ul>
-							<li>one</li>
-							<li>one</li>
-							<li>one</li>
-						</ul>
-					</div>
+
 					<SheetFooter>
-						<Button>Login</Button>
+						<Button
+							variant={"outline"}
+							className="bg-transparent outline outline-primary  text-primary"
+						>
+							Login
+						</Button>
 						<Button>Sign up</Button>
 					</SheetFooter>
 				</SheetContent>
