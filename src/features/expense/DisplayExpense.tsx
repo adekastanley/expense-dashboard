@@ -1,4 +1,5 @@
 import { Home, ShoppingCart, Bus, Utensils, Play } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 type ExpenseItem = {
 	category: string;
@@ -24,11 +25,11 @@ type EntryProps = {
 
 export default function DisplayExpense({ expenses }: { expenses: Expenses }) {
 	return (
-		<div className="max-w-2xl mx-auto bg-white rounded-xl p-8 shadow-sm">
+		<Card className="mx-1 my-1 bg-white rounded-xl p-8 ">
 			<div className="space-y-8">
 				<AllEntries expenses={expenses} />
 			</div>
-		</div>
+		</Card>
 	);
 }
 

@@ -26,10 +26,10 @@ type ExpenseItem = {
 	description: string;
 	amount: number;
 };
-type ExpenseGroup = {
-	date: string;
-	items: ExpenseItem[];
-};
+// type ExpenseGroup = {
+// 	date: string;
+// 	items: ExpenseItem[];
+// };
 const tally: Record<string, number> = {};
 
 expenses.forEach((group) => {
