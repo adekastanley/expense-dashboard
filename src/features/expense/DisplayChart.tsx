@@ -20,12 +20,12 @@ import {
 	ChartTooltipContent,
 } from "@/components/ui/chart";
 
-type ExpenseItem = {
-	category: string;
-	time: string;
-	description: string;
-	amount: number;
-};
+// type ExpenseItem = {
+// 	category: string;
+// 	time: string;
+// 	description: string;
+// 	amount: number;
+// };
 // type ExpenseGroup = {
 // 	date: string;
 // 	items: ExpenseItem[];
