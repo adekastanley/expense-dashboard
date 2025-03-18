@@ -11,7 +11,6 @@ import { TextEffect } from "../../../../components/motion-primitives/text-effect
 export default function HomePage() {
 	const [isHovering, setIsHovering] = useState(false);
 	const targetRef = useRef<HTMLDivElement>(null);
-	const targetRef1 = useRef<HTMLDivElement>(null);
 
 	const handlePositionChange = (x: number, y: number) => {
 		if (targetRef.current) {
