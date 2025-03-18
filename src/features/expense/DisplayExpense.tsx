@@ -91,7 +91,7 @@ function getCategoryIcon(category: string) {
 			return <Bus size={24} />;
 		case "Housing":
 			return <Home size={24} />;
-		case "Food and Drink":
+		case "Food":
 			return <Utensils size={24} />;
 		case "Entertainment":
 			return <Play size={24} />;
@@ -109,7 +109,7 @@ function getCategoryColor(category: string) {
 			return "bg-purple-500";
 		case "Housing":
 			return "bg-orange-400";
-		case "Food and Drink":
+		case "Food":
 			return "bg-red-500";
 		case "Entertainment":
 			return "bg-green-500";

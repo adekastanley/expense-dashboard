@@ -13,11 +13,11 @@ export default function page() {
 						<p>start - end date</p>
 					</div>
 
-					<div className="lg:max-h-[70vh] overflow-auto mt-auto">
+					<div className="md:max-h-[70vh] md:overflow-auto ">
 						<DisplayExpense expenses={expenses} />
 					</div>
 				</section>
-				<section className="col-span-1">
+				<section className="col-span-1 h-full">
 					<DisplayChart />
 				</section>
 			</main>
