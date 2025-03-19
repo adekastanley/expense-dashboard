@@ -45,7 +45,8 @@ const chartConfig = {
 	},
 	desktop: {
 		label: "Total",
-		color: "hsl(var(--chart-1))",
+		color: "#2dd881",
+		// color: "hsl(var(--chart-1))",
 	},
 } satisfies ChartConfig;
 

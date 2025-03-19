@@ -7,7 +7,7 @@ export default function DashboardLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<SidebarProvider className="bg-black">
+		<SidebarProvider className="bg-white">
 			<AppSidebar />
 			<main className="w-full  ">
 				<SidebarTrigger />

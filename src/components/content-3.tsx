@@ -27,14 +27,13 @@ export default function ContentSection() {
 
 				<div className="grid gap-6 md:grid-cols-2 md:gap-12">
 					<h2 className="text-4xl font-medium">
-						The Lyra ecosystem brings together our models, products and
-						platforms.
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos et ex
 					</h2>
 					<div className="space-y-6">
 						<p>
-							Lyra is evolving to be more than just the models. It supports an
-							entire ecosystem — from products to the APIs and platforms helping
-							developers and businesses innovate.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+							dolor suscipit modi odit architecto nisi quaerat. Soluta, numquam.
+							Amet officia odit quidem commodi.
 						</p>
 
 						<Button
