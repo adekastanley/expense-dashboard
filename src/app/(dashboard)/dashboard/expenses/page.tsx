@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 export default function page() {
 	return (
 		<DashboardLayout>
-			<main className="flex flex-col md:grid grid-cols-3 h-full gap-5">
+			<main className="flex flex-col-reverse md:grid grid-cols-3 h-full gap-5 relative">
 				<section className="col-span-2 h-full  ">
 					<div className="">
 						<h1 className="font-bold text-3xl mb-3">Expenses</h1>
@@ -22,7 +22,7 @@ export default function page() {
 						</div>
 					</div>
 				</section>
-				<section className="col-span-1 h-full  pt-12 ">
+				<section className="col-span-1   pt-12  relative">
 					<DisplayChart />
 				</section>
 			</main>

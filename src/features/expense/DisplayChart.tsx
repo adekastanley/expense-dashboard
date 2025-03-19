@@ -62,7 +62,7 @@ const chartConfig = {
 
 export default function DisplayChart() {
 	return (
-		<Card>
+		<Card className="relative h-auto">
 			<CardHeader>
 				<CardTitle>What you spent your money on</CardTitle>
 				<CardDescription>January - June 2024</CardDescription>
