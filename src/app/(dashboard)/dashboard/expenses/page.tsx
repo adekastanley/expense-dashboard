@@ -2,7 +2,7 @@ import DashboardLayout from "@/layout/dashLayout";
 import DisplayExpense from "@/features/expense/DisplayExpense";
 import expenses from "../../../../../data/expenses";
 import DisplayChart from "@/features/expense/DisplayChart";
-import { DisplayDateChart } from "@/features/expense/DisplayDateChart";
+import { Card } from "@/components/ui/card";
 
 export default function page() {
 	return (
@@ -15,11 +15,10 @@ export default function page() {
 					</div>
 
 					<div className="flex flex-col gap-5">
-						<div>
-							<DisplayDateChart />
-						</div>
-						<div className="md:max-h-[70vh] h-auto md:overflow-auto ">
-							<DisplayExpense expenses={expenses} />
+						<div className="md:max-h-[80vh] h-auto md:overflow-auto ">
+							<Card>
+								<DisplayExpense expenses={expenses} />
+							</Card>
 						</div>
 					</div>
 				</section>

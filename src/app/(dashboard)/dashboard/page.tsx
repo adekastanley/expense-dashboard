@@ -1,3 +1,4 @@
+import { DisplayDateChart } from "@/features/expense/DisplayDateChart";
 import DashboardLayout from "@/layout/dashLayout";
 
 export default function page() {
@@ -8,6 +9,10 @@ export default function page() {
 			<div>
 				<h1 className="font-bold text-3xl">Dashboard</h1>
 				<div>{today}</div>
+
+				<div>
+					<DisplayDateChart />
+				</div>
 			</div>
 		</DashboardLayout>
 	);

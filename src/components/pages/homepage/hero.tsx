@@ -31,11 +31,11 @@ export default function HomePage() {
 					exit: { scale: 0.3, opacity: 0 },
 				}}
 				springConfig={{
-					bounce: 0.001,
+					bounce: 0.1,
 				}}
 				transition={{
 					ease: "easeInOut",
-					duration: 0.15,
+					duration: 0.1,
 				}}
 				onPositionChange={handlePositionChange}
 			>
